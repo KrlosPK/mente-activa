@@ -1,0 +1,10 @@
+{
+  "name": "mindtrack",
+  "private": true,
+  "version": "0.1.0",
+  "scripts": {
+    "dev": "pnpm -C frontend dev",
+    "build": "pnpm -C frontend build",
+    "dev:backend": "pnpm -C backend dev"
+  }
+}

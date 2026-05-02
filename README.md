@@ -51,3 +51,29 @@ El documento de formulación del proyecto se encuentra en la carpeta **docs/**, 
 
 ## 💡 Metodología
 El desarrollo del proyecto se basa en metodologías ágiles (Scrum), utilizando herramientas como Jira para la gestión de tareas e historias de usuario.
+
+---
+
+## 🚀 Comandos para levantar el proyecto
+
+### 1. Instalar dependencias
+```bash
+pnpm install
+pnpm -C backend install
+pnpm -C frontend install
+```
+
+### 2. Levantar el backend
+```bash
+pnpm dev:backend
+```
+
+### 3. Levantar el frontend
+```bash
+pnpm dev
+```
+
+### 4. Generar build de producción del frontend
+```bash
+pnpm build
+```
