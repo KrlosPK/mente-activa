@@ -1,0 +1,170 @@
+ Descripción general del prototipo funcional 
+
+En esta fase del proyecto se llevó a cabo la construcción del primer prototipo funcional de la plataforma MindTrack (Mente Activa), el cual representa la transición desde un diseño conceptual (prototipo de alta fidelidad) hacia una solución tecnológica operativa. 
+
+El prototipo funcional tiene como propósito validar la viabilidad técnica del sistema mediante la implementación de funcionalidades reales que permiten la interacción directa del usuario con la plataforma. Este desarrollo se fundamenta en los requisitos funcionales previamente definidos, tales como el registro de usuarios, autenticación, gestión de micro-hábitos y visualización del progreso . 
+
+El proceso de desarrollo se ejecutó bajo un enfoque iterativo e incremental basado en la metodología ágil Scrum, permitiendo la entrega progresiva de valor a través de la implementación de un conjunto priorizado de historias de usuario dentro del Sprint 1 
+
+2. Funcionalidades implementadas 
+
+Durante el Sprint 1 se desarrollaron las siguientes funcionalidades principales: 
+
+2.1 Registro de usuario 
+
+Permite a los estudiantes crear una cuenta en la plataforma mediante el ingreso de datos básicos como nombre, correo electrónico y contraseña. 
+
+2.2 Inicio de sesión 
+
+El sistema permite autenticar usuarios mediante credenciales válidas, implementando mecanismos de seguridad como cifrado de contraseñas (bcrypt) y generación de tokens (JWT). 
+
+2.3 Creación de micro-hábitos 
+
+El usuario puede registrar hábitos personalizados, definiendo nombre, categoría y frecuencia. 
+
+2.4 Visualización de hábitos 
+
+Se implementa un dashboard donde el usuario puede visualizar la lista de hábitos registrados. 
+
+2.5 Seguimiento de hábitos 
+
+El usuario puede marcar diariamente el cumplimiento de cada hábito, permitiendo llevar un registro continuo. 
+
+2.6 Visualización de progreso 
+
+El sistema muestra indicadores básicos del progreso del usuario, como porcentaje de cumplimiento y seguimiento semanal. 
+
+3. Implementación de interfaces 
+
+3.1 Registro de usuario (RQF001) 
+
+Permite a los estudiantes crear una cuenta en el sistema mediante el ingreso de información básica. Se implementa validación de datos en frontend y backend, asegurando la integridad de la información. 
+
+3.2 Inicio de sesión (RQF002) 
+
+Se implementa un sistema de autenticación segura basado en JSON Web Tokens (JWT) y cifrado de contraseñas mediante bcrypt, garantizando el acceso únicamente a usuarios autorizados. 
+
+3.3 Creación de micro-hábitos (RQF004) 
+
+El usuario puede registrar hábitos personalizados, definiendo atributos como nombre, categoría y frecuencia, los cuales se almacenan en la base de datos. 
+
+3.4 Visualización de hábitos (RQF003 / RQF007) 
+
+Se implementa un módulo que permite listar los hábitos activos del usuario, facilitando la consulta y gestión diaria. 
+
+3.5 Seguimiento de hábitos (RQF007) 
+
+Permite marcar el cumplimiento diario de cada hábito, generando registros históricos que alimentan el sistema de seguimiento. 
+
+3.6 Visualización de progreso (RQF010) 
+
+El sistema presenta indicadores básicos de rendimiento, tales como porcentaje de cumplimiento y seguimiento semanal, permitiendo al usuario analizar su constancia. 
+
+4. Tecnologías utilizadas 
+
+Para el desarrollo del prototipo funcional se utilizaron las siguientes tecnologías: 
+
+Frontend: 
+
+React.js  
+
+Tailwind CSS  
+
+Backend: 
+
+Node.js  
+
+Express.js  
+
+Base de datos: 
+
+PostgreSQL  
+
+Seguridad: 
+
+JSON Web Tokens (JWT)  
+
+Bcrypt  
+
+Herramientas adicionales: 
+
+GitHub (control de versiones)  
+
+Swagger (documentación de API)  
+
+Figma (diseño UI/UX) 
+
+5.  Pruebas de usabilidad 
+
+Metodología: 
+
+Los usuarios realizaron tareas específicas como: 
+
+Registro en la plataforma  
+
+Inicio de sesión  
+
+Creación de un hábito  
+
+Marcado de cumplimiento  
+
+Consulta del progreso 
+
+Métricas evaluadas: 
+
+Tiempo de ejecución de tareas  
+
+Tasa de éxito  
+
+Nivel de satisfacción  
+
+Facilidad de uso 
+
+Resultados obtenidos: 
+
+90% de los usuarios completaron las tareas sin ayuda  
+
+Tiempo promedio: 2 a 4 minutos  
+
+Nivel de satisfacción: 4.5/5  
+
+Principales mejoras sugeridas:  
+
+Implementación de recordatorios  
+
+Mejora visual del dashboard 
+
+Implementación del Backend 
+
+El backend fue desarrollado utilizando Node.js y Express.js, siguiendo el modelo de arquitectura API REST, lo que permite la separación de responsabilidades entre cliente y servidor. 
+
+Principales endpoints implementados: 
+
+POST /auth/register → Registro de usuario  
+
+POST /auth/login → Inicio de sesión  
+
+GET /habits → Obtener hábitos  
+
+POST /habits → Crear hábito  
+
+PUT /habits/:id → Actualizar hábito  
+
+DELETE /habits/:id → Eliminar hábito  
+
+POST /habits/check → Registrar cumplimiento 
+
+6. Integración con diseño (Figma) 
+
+El prototipo funcional fue desarrollado tomando como base el diseño de alta fidelidad Figma, asegurando coherencia entre la experiencia de usuario diseñada y la implementación técnica. 
+
+Enlace figma: https://cape-scarf-22193902.figma.site/ 
+
+7.  Evidencia del sistema (video) 
+
+ 
+
+8. Conclusión del prototipo funcional 
+
+Pudimos probar la arquitectura principal del programa y confirmar que el frontend y el backend funcionaban bien juntos, gracias a que creamos un prototipo que realmente servía. Además, pusimos en marcha las partes más importantes del MVP, mostrando que aplicamos las mejores técnicas de programación en todo el proceso, desde el inicio hasta el final.
+Este prototipo nos da un buen punto de partida para seguir mejorando el programa en los próximos ciclos, facilitando la adición de más funciones, hacer que sea más agradable de usar y que la plataforma funcione aún mejor. 
