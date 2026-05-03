@@ -2,7 +2,10 @@ import express from 'express';
 import cors from 'cors';
 import { sequelize } from './db.js';
 import { authRouter } from './routes/auth.js';
+import habitsRouter from './routes/habits.js';
 import { errorHandler } from './middleware/errorHandler.js';
+
+import './models/index.js';
 
 const app = express();
 const port = Number(process.env.PORT) || 4000;
@@ -20,6 +23,7 @@ app.get('/health', (_req, res) => {
 });
 
 app.use('/api/auth', authRouter);
+app.use('/api/habits', habitsRouter);
 
 app.use(errorHandler);
 
